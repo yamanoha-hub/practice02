@@ -3,16 +3,25 @@ body {
   color: #444;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 header {
   height: 130px;
   margin: 0 auto;
 }
 
 .header-inner {
-  max-width: 1180px;
   height: 100%;
   padding: 0 20px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,12 +50,37 @@ header {
   justify-content: flex-end;
 }
 
+.main-visual {
+  background-image: url(../img/fv.png);
+  background-size: cover;
+  background-position: center;
+  height: 947px;
+}
 
+.belief-inner {
+  background-color: #fff;
+  height: 664px;
+  display: flex;
+  justify-content: space-between
+}
 
+.belief-text {
+  margin-top: 200px;
+}
+.belief-text h2 {
+  margin-left: 32px;
+}
 
+.belief-text p {
+  font-size: 16px;
+  line-height: 2.375;
+  margin: 46px 0 0 32px;
 
+}
 
-
+.belief-inner img {
+  margin-top: 162px;
+}
 
 
 
