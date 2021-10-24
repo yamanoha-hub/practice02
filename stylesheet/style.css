@@ -6,7 +6,7 @@ body {
 figure {
   margin: 0;
   padding: 0;
-  display: inline-block;
+  /* display: inline; */
 }
 
 .wrapper {
@@ -81,6 +81,80 @@ header {
 .belief-inner img {
   margin-top: 162px;
 }
+
+
+.content-about {
+  background-color: #F5FCF8;
+}
+
+.treatment-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contents-title {
+  text-align: center;
+}
+.contents-title .title {
+  font-size: 24px;
+  padding-top: 85px;
+}
+.contents-title p {
+  margin-top: 79px;
+  margin-bottom: 37px;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-box {
+  width: 380px;
+  height: 593px;
+  border: solid 2px #C9C9C9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.content-box:nth-child(3) {
+  margin-right: 0;
+}
+
+.content-box h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 47px;
+}
+.content-box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 54px;
+  line-height: 2.375;
+}
+.content-box figure {
+  margin-top: auto;
+}
+
+
+.news-list {
+  height: 390px;
+  background-color: #fff;
+  border-radius: 30px;
+
+
+}
+
+
+
+
+
+
+
 
 
 
