@@ -1,0 +1,58 @@
+body {
+  font-family: "Noto Sans JP", "cinecaption" "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #444;
+}
+
+header {
+  height: 130px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  max-width: 1180px;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  height: 73px;
+}
+.header-logo p {
+  font-size: 30px;
+  line-height: 1.33333;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.header-right p {
+  font-size: 14px;
+}
+
+.tel p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #21A937;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
