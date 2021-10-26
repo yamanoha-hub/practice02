@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>石井総合内科クリニック</title>
   <meta name="description" content="石井総合内科は山形県山形市七日町の総合内科です">
+  <meta name="format-detection" content="telephone=no">  <!--- 自動のリンク回避 --->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--- グーグルフォント --->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--- グーグルフォント --->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">  <!--- グーグルフォント --->
+  <title>石井総合内科クリニック</title>
   <!-- <meta name=“robots” content=“noindex”> -->
   <link rel="stylesheet" href="stylesheet/reset.css">
   <link rel="stylesheet" href="stylesheet/style.css">
@@ -13,14 +17,15 @@
 <body>
   <header>
     <div class="header-inner wrapper">
-      <div class="header-logo">
+      <div class="logo">
         <h1><img src="/img/logo.png" alt="病院の地図マーク"></h1>
         <p>石井総合内科<br>クリニック</p>
       </div>
       <div class="header-right">
         <p>受付時間 8:30~18:00 平日・土(日祝はお休み) </p>
         <div class="tel">
-          <p>000-0000-0000</p>
+          <img src="img/tel.png" alt="受話器の線画アイコン">
+          <a class="header-tel" href="tel:+81-00-0000-000">000-0000-0000</a>
         </div>
       </div>
     </div>
@@ -28,17 +33,18 @@
   <main>
     <div class="main-visual">
       <div class="mv-title">
-        <p>石井クリニックはこれからも</p>
-      </div>
-      <div class="mv-title2">
-        <p>山形の皆様の<span>かかりつけ医</span>です</p>
+        <h2>石井クリニックはこれからも</h2>
+        <h2>山形の皆様の<span>かかりつけ医</span>です</h2>
       </div>
     </div>
 
     <section class="belief">
       <div class="belief-inner wrapper">
         <div class="belief-text">
-          <h2>山形で治療し続けて30年<br>笑顔をお守りします</h2>
+          <h2 class="under-ver">
+            <span>山形で治療し続けて30年</span>
+            <span>笑顔をお守りします</span>
+          </h2>
           <p>ここ山形の地で当院を開院し30年が経ちました。<br>
             皆様の笑顔を守るお手伝いをさせていただきました。<br>
             いつも皆様のそばにある”山形県民のかかりつけ医”として<br>
@@ -55,7 +61,9 @@
       <section class="treatment">
         <div class="treatment-inner wrapper">
           <div class="contents-title">
-            <h2 class="title">治療内容</h2>
+            <h2 class="under-ver">
+              <span>治療内容</span>
+            </h2>
             <p>以下の検査項目以外でも、まずはご相談頂けますと幸いです。</p>
           </div>
           <div class="contents">
@@ -94,8 +102,10 @@
         </div>
       </section>
       <section class="news">
-        <div class="contents-title">
-          <h2 class="title">お知らせ</h2>
+        <div class="news-title">
+          <h2 class="under-ver">
+            <span>お知らせ</span>
+          </h2>
         </div>
         <div class="news-list wrapper">
           
@@ -103,6 +113,54 @@
       </section>
     </div>
   </main>
-  
+  <footer>
+    <div class="footer-inner wrapper">
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6266.375023515743!2d140.337154575511!3d38.25195691870148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bb603d4436fcd%3A0xa50e3433978fc243!2z44CSOTkwLTAwNDIg5bGx5b2i55yM5bGx5b2i5biC5LiD5pel55S6!5e0!3m2!1sja!2sjp!4v1635239145872!5m2!1sja!2sjp" width="608" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="footer-info">
+        <div class="logo">
+          <h1><img src="/img/logo.png" alt="病院の地図マーク"></h1>
+          <p>石井総合内科<br>クリニック</p>
+        </div>
+        <div class="address">
+          <p>〒000-0000</p>
+          <p>山形県山形市七日町xxxxxx</p>
+        </div>
+        <div class="tel2">
+          <img src="img/tel.png" alt="受話器の線画アイコン">
+          <a class="footer-tel" href="tel:+81-00-0000-000">000-0000-0000</a>
+        </div>
+        <div class="medical-list">
+          <div class="box1">
+            <h3>診療時間</h3>
+            <div class="list">
+              <dl class="time">
+                <dt>月・火</dt>
+                <dd>午前 8:30~12:30  午後 15:00~18:30</dd>
+              </dl>
+              <dl class="time">
+                <dt>木・金</dt>
+                <dd>午前 8:30~12:30  午後 15:30~19:00</dd>
+              </dl>
+              <dl class="time">
+                <dt>土・水</dt>
+                <dd>午前 8:30~12:30  午後 14:00~18:00</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="box1">
+            <h3>休診日</h3>
+            <div class="list">
+              <dl class="time">
+                <dt>日曜・祝日</dt>
+              </dl>
+          </div>
+        </div>
+        <small>© ISHII SOUGOU NAIKA CLINIC, All Rights Reserved.</small>
+      </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
