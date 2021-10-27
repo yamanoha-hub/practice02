@@ -222,73 +222,98 @@ header {
   height: 390px;
   background-color: #fff;
   border-radius: 30px;
-
   margin-top: 74px;
 }
 
 footer {
   height: 799px;
 }
-
 .footer-inner {
-  background-color: azure;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-info {
   width: 533px;
+  height: 440px;
 }
-
-.footer-info .logo {
-  margin-bottom: 30px;
-}
-
 
 .address {
   display: flex;
+  margin-top: 30px;
 }
-.address p:nth-child(2) {
-  margin-left: 16px;
+.address p:nth-child(1) {
+  margin-right: 16px;
 }
 
-.footer-tel {
-  margin-left: 15.1px;
-}
 .tel2 {
   height: 26.8px;
   display: flex;
   align-items: center;
   margin: 33.2px 0 29.5px;
 }
+.footer-tel {
+  margin-left: 15.1px;
+}
 
 .medical-list {
+  font-size: 14px;
   border-top: 2px solid #E7E7E7;
   border-bottom: 2px solid #E7E7E7;
   padding: 19px 0;
-  font-size: 14px;
   position: relative;
-  width: 533px;
 }
 .box1 {
   display: flex;
   position: relative;
 }
-.list {
-  margin-left: 57px;
-  position: relative;
-  /* width: 100%; */
-
+.box1 h3 {
+  position: absolute;
+  padding-top: 6.5px;  /* 上の調整 */
+  padding-bottom: 8.5px;  /* 下の調整 */
 }
+.box1:nth-child(1) {
+  margin-bottom: 20px;
+}
+.list {
+  width: 100%;
+  border-left: 2px solid #E7E7E7;
+  margin-left: 84.5px;  /* 左端からborderまでの距離 */
+  padding-left: 28.5px; /* borderとの距離 */
+  padding-top: 6.5px;  /* 上の調整 */
+  padding-bottom: 6.5px;  /* 下の調整 */
+}
+.list:nth-child(1) {
+  padding-bottom: 8.5px;  /* 診療時間の下の調整 */
+}
+
 .time {
-  border-left: 2px solid #000;
   display: flex;
-  position: relative;
   width: 100%;
 }
+.time dt {
+  margin-right: 23px;
+}
+.time dd {
+  margin-right: 16px;
+}
 
+.time:nth-last-child(2) {
+  padding: 19px 0;
+}
 
-
+.footer-info>p {
+  width: 100%;
+  font-size: 11px;
+  position: relative;
+  top: 26.5px;
+}
+.footer-info>p small {
+  position: absolute;
+  right: 0;
+}
 
 @media(min-width: 768px){
   a[href^="tel:"]{
