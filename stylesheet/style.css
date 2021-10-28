@@ -2,7 +2,6 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #444;
   z-index: 1;
-
 }
 
 figure {
@@ -14,25 +13,7 @@ figure {
   margin: 0 auto;
 }
 
-/* ライン */
-.under-ver span {
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  z-index: 10;
-}
-.under-ver span::before {
-  content: "";
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  top: 20px;
-  left: 0px;
-  background-color: #99E5A5;
-  z-index: -1;
-}
-/* ライン */
-
+/* ヘッダー */
 header {
   height: 130px;
 }
@@ -59,22 +40,18 @@ header {
 .header-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 287px;
 }
 .header-right p {
   font-size: 14px;
   margin-bottom: 15.9px;
+  line-height: 1.214;
 }
 
 .tel {
   height: 26px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-}
-
-.header-tel {
-  margin-left: 14.8px;
 }
 
 .header-tel, .footer-tel {
@@ -83,38 +60,45 @@ header {
   color: #21A937;
 }
 
+.header-tel {
+  margin-left: 14.8px;
+}
+/* ヘッダー */
+
+/* メインビジュアル */
 .main-visual {
   background-image: url(../img/fv.png);
   background-size: cover;
   background-position: center;
   height: 947px;
-
-  display: flex;
+}
+.main-visual-inner {
+  padding-top: 133px;
+  padding-left: 221px;
 }
 
 .mv-title {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  display: inline-block;
   height: 565px;
-  margin-left: 221px;
-  margin-top: 133px;
 }
 .mv-title h2 {
-  font-family: "Noto Sans JP";
+  width: 102px;
   font-size: 28px;
   font-weight: bold;
-  padding: 25px 37px 108px;
-  background-color: #fff;
-}
-.mv-title h2:nth-child(2) {
+  padding: 25px 37px;
   margin-right: 80px;
+  background-color: #fff;
+  letter-spacing: 6px;
 }
+
 .mv-title span {
   color: #21A937;
   font-weight: bold;
 }
+/* メインビジュアル */
 
+/* 信念 */
 .belief-inner {
   background-color: #fff;
   height: 664px;
@@ -126,15 +110,57 @@ header {
   margin-top: 200px;
   margin-left: 31px;
 }
-.belief-text h2 span {
-  font-size: 26px;
-  font-weight: bold;
+
+  /* ライン */
+.under-ver span {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
 }
-.belief-text span:nth-child(1) {
+.under-ver span::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  background-color: #99E5A5;
+  z-index: -1;
+}
+  /* ライン */
+  /* ライン2 */
+.under-ver2 span {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.under-ver2 span::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  background-color: #99E5A5;
+  z-index: -1;
+}
+  /* ライン2 */
+
+.belief-text h2 span {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.208;
+}
+.belief-text .under-ver span {
+  text-align: right;
   margin-bottom: 40px;
   margin-left: 1px;
   padding: 0 8px 0 1px;
 }
+
+
 .belief-text p {
   font-size: 16px;
   line-height: 2.375;
@@ -143,6 +169,7 @@ header {
 .belief-inner img {
   margin-top: 162px;
 }
+/* 信念 */
 
 
 .content-about {
@@ -150,6 +177,7 @@ header {
   padding-bottom: 112px;
 }
 
+/* 治療内容 */
 .treatment-inner {
   height: 100%;
   display: flex;
@@ -164,13 +192,32 @@ header {
   font-size: 24px;
   font-weight: bold;
   padding: 0 4px;
+  line-height: 1.583;
 }
+  /* ライン */
+.under-ver3 span {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.under-ver3 span::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  background-color: #99E5A5;
+  z-index: -1;
+}
+  /* ライン */
 .contents-title p {
   margin-top: 79px;
 }
 
 .contents {
-  margin-top: 39px;
+  margin-top: 37px;
   display: flex;
   justify-content: space-between;
 }
@@ -178,18 +225,15 @@ header {
 .content-box {
   width: 380px;
   height: 593px;
+  box-sizing: border-box;
   border: solid 2px #C9C9C9;
   border-radius: 10px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  justify-content: space-between;
+  background-color: #fff;
 }
-.content-box:nth-child(3) {
-  margin-right: 0;
-}
-
 .content-box h3 {
   font-size: 24px;
   font-weight: bold;
@@ -205,10 +249,12 @@ header {
 .content-box figure {
   margin-top: auto;
 }
+/* 治療内容 */
 
 
+/* お知らせ */
 .news-title {
-  margin-top: 90px;
+  margin-top: 89px;
   text-align: center;
 }
 
@@ -217,35 +263,43 @@ header {
   font-weight: bold;
   padding-right: 3px;
   padding-left: 4px;
+  line-height: 1.583;
 }
 
 .news-list {
   height: 390px;
+  margin-top: 74px;
   background-color: #fff;
   border-radius: 30px;
-  margin-top: 74px;
-  border-radius: 30px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* 左右 上下 ぼかし 色 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 49px;
+  padding-bottom: 49px;
 }
 
 .news-list ul li {
   width: 1048px;
-  height: 63px;
   border-bottom: 2px solid #E7E7E7;
   margin: 0 auto;
+  padding-bottom: 18px;
+  margin-bottom: 17px;
+  box-sizing: border-box;
 }
+.news-list ul li:nth-child(4) {
+  margin-bottom: 0;
+}
+
 .news-list ul li a {
   height: 100%;
   display: flex;
   align-items: center;
-  font-weight: bold;
 }
 .news-list ul li span {
   color: #21A937;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .news-list .label {
@@ -260,25 +314,25 @@ header {
   color: #fff;
   line-height: 25px;
   font-size: 12px;
+  font-weight: bold;
 }
-
 .news-text p {
   font-weight: bold;
 }
-
-
-
-
-
 .news-list>a {
-  margin: 49px 65px 0 auto;
+  font-size: 16px;
+  margin: 44px 65px 0 auto;
   font-weight: bold;
+  margin-bottom: 49px;
+  line-height: 2;
 }
 .news-list>a::after {
   content: " ▶︎";
   width: 10px;
+  height: 16px;
   z-index: -1;
 }
+/* お知らせ */
 
 
 
@@ -288,8 +342,7 @@ header {
 
 
 
-
-
+/* フッター */
 footer {
   height: 799px;
 }
@@ -369,6 +422,25 @@ footer {
   padding: 19px 0;
 }
 
+  /* ライン */
+.under-ver4 span {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.under-ver4 span::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #99E5A5;
+  z-index: -1;
+}
+  /* ライン */
+
 .footer-info>p {
   width: 100%;
   font-size: 11px;
@@ -379,6 +451,7 @@ footer {
   position: absolute;
   right: 0;
 }
+/* フッター */
 
 @media(min-width: 768px){
   a[href^="tel:"]{
