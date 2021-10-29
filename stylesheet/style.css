@@ -608,6 +608,13 @@ footer {
   /* フッター */
 }
 
+@media(min-width: 768px){
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
+}
+
+
 @media(max-width: 599px) { /* 375pxまで(スマートフォン) */
   /* ヘッダー */
   .logo {
@@ -750,11 +757,52 @@ footer {
   }
   /* お知らせ */
 
-}
 
 
-@media(min-width: 768px){
-  a[href^="tel:"]{
-    pointer-events: none;
+  /* フッター */
+  .footer-info {
+    width: 350px;
+    height: 100%;
   }
+  .box1 {
+    flex-direction: column;
+    text-align: center;
+    position: static;
+  }
+  .box1 h3 {
+    position: static;
+    font-weight: bold;
+  }
+  .list {
+    text-align: center;
+    border-left: 0;
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  .time {
+    justify-content: center;
+  }
+
+  .time dt {
+    margin-right: 0px;
+  }
+  .time dd {
+    margin-right: 0;
+    margin-left: 16px;
+  }
+
+  .footer-info>p {
+    margin-bottom: 50px;
+  }
+  /* フッター */
+
+  /* フッター */
+  .maps iframe {
+    width: 350px;
+    height: 350px;
+  }
+  /* フッター */
 }
+
+
