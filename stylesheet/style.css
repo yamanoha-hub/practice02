@@ -24,6 +24,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -160,7 +162,6 @@ header {
   padding: 0 8px 0 1px;
 }
 
-
 .belief-text p {
   font-size: 16px;
   line-height: 2.375;
@@ -253,6 +254,9 @@ header {
 
 
 /* お知らせ */
+.news {
+  margin: 0 30px;
+}
 .news-title {
   margin-top: 89px;
   text-align: center;
@@ -280,7 +284,7 @@ header {
 }
 
 .news-list ul li {
-  width: 1048px;
+  max-width: 1048px;
   border-bottom: 2px solid #E7E7E7;
   margin: 0 auto;
   padding-bottom: 18px;
@@ -296,7 +300,14 @@ header {
   display: flex;
   align-items: center;
 }
-.news-list ul li span {
+
+.news-iotitle {
+  display: flex;
+  align-items: center;
+
+}
+
+.news-iotitle span {
   color: #21A937;
   font-size: 16px;
   font-weight: bold;
@@ -324,7 +335,6 @@ header {
   margin: 44px 65px 0 auto;
   font-weight: bold;
   margin-bottom: 49px;
-  line-height: 2;
 }
 .news-list>a::after {
   content: " ▶︎";
@@ -333,14 +343,6 @@ header {
   z-index: -1;
 }
 /* お知らせ */
-
-
-
-
-
-
-
-
 
 /* フッター */
 footer {
@@ -452,6 +454,304 @@ footer {
   right: 0;
 }
 /* フッター */
+
+
+
+@media(max-width: 1200px) { /* タブレット */
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  /* ヘッダー */
+  .logo p {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .header-right p {
+    font-size: 13px;
+    line-height: 1;
+  }
+  /* ヘッダー */
+  
+  /* メインビジュアル */
+  .main-visual {
+    height: 600px;
+  }
+  .main-visual-inner {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .mv-title {
+    height: 450px;
+  }
+  .mv-title h2 {
+    width: 60px;
+    font-size: 20px;
+    padding: 25px 20px;
+    margin-right: 50px;
+  }
+  /* メインビジュアル */
+
+  
+  /* 信念 */
+  .belief-inner {
+    height: 664px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .belief-text {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .belief-text h2 span {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.208;
+  }
+  .belief-text .under-ver span {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-left: 1px;
+    padding: 0 8px 0 1px;
+  }
+  .belief-text p {
+    margin-top: 20px;
+  }
+  .belief-inner figure {
+    width: 500px;
+  }
+  .belief-inner figure img {
+    width: 500px;
+    margin: 0;
+  }
+  /* 信念 */
+
+
+  .content-about {
+    padding-bottom: 80px;
+  }
+  /* 治療内容 */
+  .contents-title {
+    padding-top: 50px;
+  }
+  .contents-title p {
+    margin-top: 50px;
+  }
+  .contents {
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-box {
+    margin-top: 40px;
+  }
+  /* 治療内容 */
+
+  /* お知らせ */
+  .news-title {
+    margin-top: 60px;
+  }
+  .news-list {
+    height: 100%;
+    margin-top: 50px;
+    padding: 30px 30px;
+  }
+  .news-list ul li {
+    width: auto;
+  }
+  .news-list ul li a {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .news-text p {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  .news-iotitle {
+    display: flex;
+    align-items: center;
+  }
+
+  .news-list>a {
+    margin: 44px 20px 0 auto;
+  }
+  /* お知らせ */
+
+  /* フッター */
+  footer {
+  height: 100%;
+  margin: 30px;
+  }
+  .footer-inner {
+    flex-direction: column;
+  }
+  .maps iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .footer-info>p {
+    text-align: center;
+  }
+  .footer-info>p small {
+    left: 0;
+  }
+  /* フッター */
+}
+
+@media(max-width: 599px) { /* 375pxまで(スマートフォン) */
+  /* ヘッダー */
+  .logo {
+    height: 60px;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .header-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-right {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+  .header-right p {
+    margin-bottom: 10px;
+  }
+  .tel {
+    height: 26px;
+    display: flex;
+    justify-content: center;
+  }
+  /* ヘッダー */
+
+  /* メインビジュアル */
+  .main-visual {
+    height: 450px;
+  }
+  .main-visual-inner {
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+  .mv-title {
+    height: 370px;
+  }
+  .mv-title h2 {
+    width: 50px;
+    font-size: 16px;
+    padding: 25px 16px;
+  }
+  /* メインビジュアル */
+
+  /* 信念 */
+  .belief-inner {
+    height: 600px;
+  }
+  .belief-text h2 span {
+    font-size: 18px;
+  }
+
+  /* ライン */
+.under-ver span::before {
+  height: 6px;
+  top: 17px;
+}
+  /* ライン */
+  /* ライン2 */
+.under-ver2 span::before {
+  height: 6px;
+  top: 17px;
+}
+  /* ライン2 */
+  .belief-text p {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .belief-inner figure {
+    width: 350px;
+  }
+  .belief-inner figure img {
+    width: 350px;
+  }
+  /* 信念 */
+
+  /* 治療内容 */
+
+.contents-title h2 span {
+  font-size: 20px;
+}
+  /* ライン3 */
+  .under-ver3 span::before {
+    height: 6px;
+    top: 22px;
+  }
+    /* ライン3 */
+  .contents-title p {
+    margin-top: 40px;
+    font-size: 12px;
+  }
+  .content-box {
+    height: 450px;
+    width: 300px;
+  }
+  .content-box h3 {
+    font-size: 18px;
+  }
+  .content-box p {
+    font-size: 12px;
+    margin-top: 35px;
+  }
+  .content-box figure {
+    margin-top: auto;
+  }
+  /* 治療内容 */
+
+  /* お知らせ */
+  .news-list {
+    height: 100%;
+    margin-top: 50px;
+    padding: 30px 30px;
+  }
+  .news-title h2 span {
+    font-size: 20px;
+  }
+  .news-list ul li {
+    width: auto;
+  }
+  .news-list ul li a {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .news-text p {
+    margin-top: 10px;
+  }
+
+  .news-iotitle {
+    display: flex;
+    align-items: center;
+  }
+
+  .news-list>a {
+    margin: 44px 20px 0 auto;
+  }
+  /* お知らせ */
+
+}
+
 
 @media(min-width: 768px){
   a[href^="tel:"]{
