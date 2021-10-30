@@ -21,9 +21,15 @@ header {
 .header-inner {
   height: 100%;
   padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	    justify-content: space-between;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+      align-items: center;
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -40,8 +46,13 @@ header {
 }
 
 .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	-ms-flex-direction: column;
+  	flex-direction: column;
   width: 287px;
 }
 .header-right p {
@@ -52,8 +63,12 @@ header {
 
 .tel {
   height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
 
 .header-tel, .footer-tel {
@@ -104,8 +119,12 @@ header {
 .belief-inner {
   background-color: #fff;
   height: 664px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	    justify-content: space-between;
 }
 
 .belief-text {
@@ -181,9 +200,16 @@ header {
 /* 治療内容 */
 .treatment-inner {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	    justify-content: center;
 }
 .contents-title {
   text-align: center;
@@ -219,8 +245,12 @@ header {
 
 .contents {
   margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	    justify-content: space-between;
 }
 
 .content-box {
@@ -229,10 +259,20 @@ header {
   box-sizing: border-box;
   border: solid 2px #C9C9C9;
   border-radius: 10px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	-ms-flex-direction: column;
+  	flex-direction: column;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	    align-items: center;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	    justify-content: space-between;
   background-color: #fff;
 }
 .content-box h3 {
@@ -276,8 +316,13 @@ header {
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* 左右 上下 ぼかし 色 */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+      flex-direction: column;
   box-sizing: border-box;
   padding-top: 49px;
   padding-bottom: 49px;
@@ -302,9 +347,12 @@ header {
 }
 
 .news-iotitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	    align-items: center;
 }
 
 .news-iotitle span {
@@ -350,9 +398,15 @@ footer {
 }
 .footer-inner {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	    justify-content: space-between;
 }
 
 .footer-info {
@@ -361,6 +415,8 @@ footer {
 }
 
 .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
 }
@@ -370,8 +426,12 @@ footer {
 
 .tel2 {
   height: 26.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	    align-items: center;
   margin: 33.2px 0 29.5px;
 }
 .footer-tel {
@@ -386,6 +446,8 @@ footer {
   position: relative;
 }
 .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -410,6 +472,8 @@ footer {
 }
 
 .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -497,9 +561,15 @@ footer {
   /* 信念 */
   .belief-inner {
     height: 664px;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+
+    -webkit-box-orient: vertical;
+    	-webkit-box-direction: reverse;
+      	-ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+            justify-content: center;
+    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	      align-items: center;
   }
   .belief-text {
     margin-top: 50px;
@@ -542,8 +612,13 @@ footer {
   }
   .contents {
     margin-top: 0px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+  	  -webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+          flex-direction: column;
+    -webkit-box-align: center;
+	    -ms-flex-align: center;
+    	  align-items: center;
   }
   .content-box {
     margin-top: 40px;
@@ -563,7 +638,10 @@ footer {
     width: auto;
   }
   .news-list ul li a {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+  	  -webkit-box-direction: normal;
+      	-ms-flex-direction: column;
+          flex-direction: column;
     align-items: stretch;
   }
   .news-text p {
@@ -572,8 +650,12 @@ footer {
   }
 
   .news-iotitle {
-    display: flex;
-    align-items: center;
+    display:-webkit-box;
+    	display:-ms-flexbox;
+      	display:flex;
+    -webkit-box-align: center;
+    	-ms-flex-align: center;
+        align-items: center;
   }
 
   .news-list>a {
@@ -587,16 +669,26 @@ footer {
   margin: 30px;
   }
   .footer-inner {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+      	-ms-flex-direction: column;
+  	      flex-direction: column;
   }
   .maps iframe {
     width: 400px;
     height: 400px;
   }
   .footer-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+          flex-direction: column;
+    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	      align-items: center;
     margin-top: 30px;
   }
   .footer-info>p {
@@ -628,8 +720,13 @@ footer {
     font-size: 20px;
   }
   .header-inner {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+          flex-direction: column;
+    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	      justify-content: center;
   }
   .header-right {
     width: 100%;
@@ -641,8 +738,12 @@ footer {
   }
   .tel {
     height: 26px;
+    display: -webkit-box;
+  	display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+        justify-content: center;
   }
   /* ヘッダー */
 
@@ -740,7 +841,10 @@ footer {
     width: auto;
   }
   .news-list ul li a {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+  	  -webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+          flex-direction: column;
     align-items: stretch;
   }
   .news-text p {
@@ -748,8 +852,12 @@ footer {
   }
 
   .news-iotitle {
+    display: -webkit-box;
+  	display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    	-ms-flex-align: center;
+        align-items: center;
   }
 
   .news-list>a {
@@ -757,15 +865,16 @@ footer {
   }
   /* お知らせ */
 
-
-
   /* フッター */
   .footer-info {
     width: 350px;
     height: 100%;
   }
   .box1 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+  	  -webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+          flex-direction: column;
     text-align: center;
     position: static;
   }
@@ -781,7 +890,9 @@ footer {
   }
 
   .time {
-    justify-content: center;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+        justify-content: center;
   }
 
   .time dt {
