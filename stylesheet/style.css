@@ -51,8 +51,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   	-webkit-box-direction: normal;
-  	-ms-flex-direction: column;
-  	flex-direction: column;
+    	-ms-flex-direction: column;
+      	flex-direction: column;
   width: 287px;
 }
 .header-right p {
@@ -67,8 +67,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
+  	-ms-flex-pack: end;
+	    justify-content: flex-end;
 }
 
 .header-tel, .footer-tel {
@@ -96,7 +96,7 @@ header {
 
 .mv-title {
   -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
   height: 565px;
 }
 .mv-title h2 {
@@ -204,9 +204,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-      flex-direction: column;
+    -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+        flex-direction: column;
   -webkit-box-pack: center;
 	  -ms-flex-pack: center;
 	    justify-content: center;
@@ -264,8 +264,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   	-webkit-box-direction: normal;
-  	-ms-flex-direction: column;
-  	flex-direction: column;
+    	-ms-flex-direction: column;
+      	flex-direction: column;
   -webkit-box-align: center;
 	  -ms-flex-align: center;
 	    align-items: center;
