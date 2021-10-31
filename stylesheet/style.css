@@ -259,7 +259,6 @@ header {
   box-sizing: border-box;
   border: solid 2px #C9C9C9;
   border-radius: 10px;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,9 +319,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-      flex-direction: column;
+    -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+        flex-direction: column;
   box-sizing: border-box;
   padding-top: 49px;
   padding-bottom: 49px;
@@ -342,8 +341,12 @@ header {
 
 .news-list ul li a {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	    align-items: center;
 }
 
 .news-iotitle {
@@ -380,9 +383,11 @@ header {
 }
 .news-list>a {
   font-size: 16px;
-  margin: 44px 65px 0 auto;
+  -ms-flex-item-align: end;
+	  align-self: flex-end;
+  margin-top: 44px;
+  margin-right: 65px;
   font-weight: bold;
-  margin-bottom: 49px;
 }
 .news-list>a::after {
   content: " ▶︎";
@@ -659,7 +664,7 @@ footer {
   }
 
   .news-list>a {
-    margin: 44px 20px 0 auto;
+    margin-right: 20px;
   }
   /* お知らせ */
 
@@ -798,7 +803,6 @@ footer {
   /* 信念 */
 
   /* 治療内容 */
-
 .contents-title h2 span {
   font-size: 20px;
 }
@@ -859,10 +863,6 @@ footer {
     	-ms-flex-align: center;
         align-items: center;
   }
-
-  .news-list>a {
-    margin: 44px 20px 0 auto;
-  }
   /* お知らせ */
 
   /* フッター */
@@ -906,9 +906,6 @@ footer {
   .footer-info>p {
     margin-bottom: 50px;
   }
-  /* フッター */
-
-  /* フッター */
   .maps iframe {
     width: 350px;
     height: 350px;
