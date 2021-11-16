@@ -340,6 +340,7 @@ header {
 }
 
 .news-list ul li a {
+  color: #444;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,12 +383,13 @@ header {
   font-weight: bold;
 }
 .news-list>a {
+  color: #444;
   font-size: 16px;
+  font-weight: bold;
   -ms-flex-item-align: end;
 	  align-self: flex-end;
   margin-top: 44px;
   margin-right: 65px;
-  font-weight: bold;
 }
 .news-list>a::after {
   content: " ▶︎";
